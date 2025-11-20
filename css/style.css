@@ -49,10 +49,11 @@ body{
     left: 0;
     width: 100%;
     background: #121212;
+    z-index: 100;
 
 }
 #bannerPart{
-    background: url('/images/banner\ 2.png');
+    background: url('../images/banner\ 2.png');
     background-position:center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -152,18 +153,121 @@ font-family: Arial, Helvetica, sans-serif;}
     background: #212121;
     color: white;
     outline: none;
-    border: noe;
+    border: none;
+}
+
+
+#row2 {
+    display: flex;
+    gap: 20px;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+
+   
+    
+}
+#row2 div{
+      background:#212121;
+    
+      border-top-right-radius:50px ;
+      border-bottom-left-radius:50px ;
+
+
+   
+    
+}
+#row2 h5{
+      display: flex;
+      gap: 1px;
+      font-size: 60px;
+      align-items: center;
+      padding-left: 75px;
+      padding-right: 75px;
+    
+    
+}
+#row2 h5 img{
+    margin-top: 53px;
+    margin-left: 5px;
+  
+    
+}
+#row2 p{
+   font-family: 'Oswald',sans-serif;
+   font-size: 18px;
+   font-weight: 100;
+   letter-spacing:2px ;
+   text-align: center;
+    
+}
+/* community part end */
+
+
+
+
+
+
+
+
+
+/* Section-3 part start */
+#section-3 {
+   
+    background: #191919;
+
+}
+.main{
+    display:flex;
+    padding-top: 115px;
+    padding-bottom: 90px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+   
+}
+.redImg img,
+.blackImg img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.blackImg h2{
+    font-size: 38px;
+    font-weight: 500;
+    font-family: 'Barlow Condensed';
+    letter-spacing: 3px;
+    padding-bottom: 80px;
+    text-align: right;
+    padding-left: 100px;
+  
+
+}
+.sideIcon{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    
+}
+
+.redImg,
+.blackImg {
+    width: 50%;
+    
+}
+.blackImg {
+    position: relative;
+}
+.redImg{
+    margin-top: 30px;
 }
 
 
 
 
-
-
-
-
-/* community part end */
-
+/* Section-3 part end */
 
 
 
@@ -172,8 +276,11 @@ font-family: Arial, Helvetica, sans-serif;}
 
 
 
-/* community part start */
-/* community part end */
+
+
+
+
+
 /* community part start */
 /* community part end */
 /* community part start */
