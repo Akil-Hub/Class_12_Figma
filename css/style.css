@@ -35,8 +35,7 @@ body {
 }
 
 .nav-link:hover {
-    display: none;
-
+color: white;
 }
 
 .socialPart a {
@@ -82,6 +81,18 @@ body {
 #bannerPart .text h1 {
     font-size: 60px;
     font-weight: 600;
+    position: relative;
+
+
+}
+#bannerPart .text h1::after {
+    position: absolute;
+    height: 4px;
+    width: 90px;
+    background: white;
+    content: '';
+    left:515px;
+    bottom: 10px;
 
 
 }
@@ -90,8 +101,8 @@ body {
     font-size: 16px;
     padding-bottom: 48px;
     text-align: left;
-    width: 30%;
-
+    width: 500px;
+color: rgb(192, 189, 189);
 
 }
 
@@ -130,6 +141,17 @@ body {
     font-weight: 400;
     letter-spacing: 7%;
     line-height: 150%;
+    position: relative;
+
+}
+#communityPart h2::after {
+  position: absolute;
+    height: 4px;
+    width: 120px;
+    background: #FF4655;
+    content: '';
+    left:190px;
+    bottom: 10px;
 
 }
 
@@ -265,7 +287,23 @@ body {
     letter-spacing: 3px;
     padding-bottom: 80px;
     text-align: right;
-    padding-left: 100px;
+    position: relative;
+    width: 85%;
+    
+
+
+}
+.blackImg h2::after {
+ content: '';
+  position: absolute;
+  height: 4px;
+  width: 120px;                 
+  background: #FF4655;
+  right:120px;                  
+
+  bottom:90px;     
+  
+
 
 
 }
@@ -291,29 +329,578 @@ body {
 .redImg {
     margin-top: 30px;
 }
+/* Section-3 part end *
+
+/* videos part start */
+#section4{
+    background:#121212;
+}
+.videoPart{
+    padding:100px 0px;
+}
+.videoPart p{
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+.videoPart h2{
+    font-size: 38px;
+    font-weight: 500;
+    font-family: "Oswald",sans-serif;
+    width: 500px;
+    position: relative;
+    letter-spacing: 3px;
+    margin-bottom: 80px;
+  
+}
+.videoPart h2::after{
+     position: absolute;
+     height: 4px;
+    width: 120px;
+    background: #FF4655;
+    content: '';
+    left:160px;
+    bottom: 10px;
+  
+}
+.team1,.team2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.team1,.team2, h4 {
+  font-size: 40px;
+  font-weight: 500;
+  font-family: 'Oswald'sans-serif;
+  letter-spacing: 10px;
+}
+ 
+.team1{
+    margin-bottom: 60px;
+}
+
+.video img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* videos part end */
+
+
+/* section 5 fridaySale part start */
+#section5{
+    background: #191919;
+}
+.fridaySale {
+    padding-top: 110px;
+    padding-bottom:70px;
+}
+.sale img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.fridaySale h2{
+     font-size: 38px;
+    font-weight: 500;
+    font-family: "Oswald",sans-serif;
+    width: 550px;
+    position: relative;
+    letter-spacing: 3px;
+    
+    margin-bottom: 80px;
+    text-align: end;
+    margin-left: auto;
+
+}
+.fridaySale h2::after{
+       height: 4px;
+    width: 120px;
+    background: #FF4655;
+    content: '';
+    right:110px;
+    bottom: 10px;
+    position: absolute;
+}
+
+.saleText h4{
+    font-size: 16px;
+    padding: 5px 0px;
+    letter-spacing: 1px;
+    width: 100%;
+    margin-top: 4px;
+    
+
+}
+.saleText p{
+    letter-spacing: 2px;
+    font-size: 14px;
+    color: rgb(201, 193, 193);
+    
+
+}
+.discount p{
+    display: inline;
+    padding: 0px 10px;
+    font-size: 18px;
+    
+}
+.discount .disk{
+    font-size: 18px;
+}
+.disk{
+    background:#FF4655;
+    font-size: 50px;
+  
+}
+.old-price{
+    text-decoration: line-through;
+    padding-right: 10px;
+    color: gray;
+    font-weight: 700;
+}
+.new-price{
+    font-weight: 700;
+    color: white;
+}
+h4 sup {
+    font-size: 9px;
+  position: relative;
+  top: -7px;
+  display: inline-block;  
+  margin-left: -6px;      
+  letter-spacing: 0;
+}
+.fridaySale h5{
+    padding: 35px 0px;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+.gamesCatalog{
+    padding:40px 110px 40px 45px ;
+    background: #212121;
+    
+    
+}
+.gamesCatalog .text h6{
+    color: #FF4655;
+    font-size: 17px;
+    letter-spacing: 4px;
+    font-family: "Oswald";
+    font-weight: 500;
+    margin-top: 20px;
+}
+.gamesCatalog .text h4{
+    font-size: 38px;
+    letter-spacing: 2px;
+    font-family: "Barlow Condensed";
+    font-weight: 600;
+    padding: 13px 0px;
+}
+.gamesCatalog .text p{
+ margin-bottom: 40px;
+ color: #666666;
+}
+.gamesCatalog .text a{
+color: #ddd;
+background: #121212;
+padding: 13px 30px;
+font-size: 16px;
+}
+.slideImage img{
+    text-align: center;
+    padding-left: 70px;
+    margin-left: 60px;
+}
+/* section 5 fridaySale part end */
+
+/* Section6 product part start */
+#section6{
+    background: #121212;
+}
+.gameAccessories{
+    padding: 90px 0px;
+    position: relative;
+
+}
+.gameAccessories h2{
+    font-size: 38px;
+    font-weight: 500;
+    font-family: "Oswald",sans-serif;
+    width: 700px;
+    position: relative;
+    letter-spacing: 4px;
+    margin-bottom: 80px;
+    margin-bottom: 100px;
+  
+}
+.gameAccessories h2::after{
+     position: absolute;
+     height: 4px;
+    width: 120px;
+    background: #FF4655;
+    content: '';
+    left:260px;
+    bottom: 10px;
+  
+}
+
+.product {
+    background: #191919;
+    text-align: center;
+    width: 23%;
+    margin: 0 auto;
+}
+.product p {
+    padding: 20px 0px;
+    color: #FF4655;
+    font-size: 19px;
+    font-family: 'Oswald';
+    font-weight: 500;
+
+
+}
+.product h4 {
+
+    padding-top: 30px;
+    font-size: 38px;
+    letter-spacing: 0px;
+
+}
+.product h5 {
+    font-family: 'Oswald';
+    font-weight: 600;
+font-size: 25px;
+   letter-spacing: 1px;
+
+}
+.slider img{
+    position: absolute;
+    top: 60%;
+    right:-2% ;
+}
+
+/* Section6 product part end */
+
+
+/* section 7 box part start */
+#section7{
+    background: #191919;
+}
+.boxes{
+    padding: 100px 0px;
+}
+.box img{
+    width: 100%;
+    height: auto;
+    display:block;
+    
+}
+.boxes h2{
+     font-size: 38px;
+    font-weight: 500;
+    font-family: "Oswald",sans-serif;
+    width: 550px;
+    position: relative;
+    letter-spacing: 3px;
+    
+    margin-bottom: 80px;                
+    text-align: end;
+    margin-left: auto;
+
+}
+.boxes h2::after{
+       height: 4px;
+    width: 120px;
+    background: #FF4655;
+    content: '';
+    right:110px;
+    bottom: 10px;
+    position: absolute;
+}
+.box1{
+    position: relative;
+    
+}
+.box1 .overlay {
+    position: absolute;
+    left: 13px;
+    bottom: 0;
+    width: 96%;
+    height: 50%;
+    background: rgba(87, 85, 85, 0.1);
+    pointer-events: none;
+}
+.overlay{
+    padding: 20px 30px;
+    
+}
+.overlay h3{
+font-size:20px ;
+
+}
+.overlay p{
+    width: 60%;
+    padding-top: 0px;
+    color: gray;
+
+}
+.bottomIcon{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.bottomIcon a{
+
+    padding: 5px 15px;
+    background: #FF4655;
+    color: white;
+    font-size: 10px;
+
+}
+.icons i{
+    color: #FF4655;
+    padding: 0px 10px;
+    
+    font-size: 25px;
+}
+.icons{
+    margin-right: 20px;
+}
+/* section 7 box part end */
 
 
 
+/* section 8 part start */
+#section8{
+    background: #121212;
+}
+.commonQuestions{
+    padding-top: 100px;
+    padding-bottom: 150px;
+    position: relative;
+}
+.commonQuestions h2{
+    font-size: 38px;
+    font-weight: 500;
+    font-family: "Oswald",sans-serif;
+    width: 700px;
+    position: relative;
+    letter-spacing: 4px;
+    margin-bottom: 80px;
+    margin-bottom: 100px;
+  
+}
+.commonQuestions h2::after{
+     position: absolute;
+     height: 4px;
+    width: 120px;
+    background: #FF4655;
+    content: '';
+    right:160px;
+    bottom: 10px;
+  
+}
 
-/* Section-3 part end */
+.r1{
+    border-bottom: 1px solid #666666;
+    padding-bottom: 70px;
+    padding-top: 10px;
+}
+.question1 h3, .question2 h3{
+    padding: 10px;
+    background: #FF4655;
+    color: white;
+    font-size: 26px;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    
+    
+}
+.question1,.question2{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+    
+
+}
+.r1 h6{
+  color: #FF4655;
+  padding-bottom: 2px;
+
+}
+.r1 p{
+    color: gray;
+ 
+}
+.question1 {
+    padding-right:80px ;
+}
+.question2 {
+    padding-left:100px ;
+}
+
+.r22{
+    border:none;
+    margin-top: 60px;
+}
+.verticalLine{
+    position: absolute;
+    width: 1px;
+    height: 400px;
+    background: #666666;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%,-50%);
+}
+
+/* section 8 part end */
+
+/* footer section 9 part start */
+#section9{
+        position: relative;
+
+    background: #191919;
+
+}
+.footer{
+    padding-bottom: 10px;
+    position: relative;
+}
+.redBox{
+    background: #FF4655;
+    color: white;
+    font-size:38px;
+    display: flex;
+    padding: 30px 20px;
+    font-weight: 700;
+    font-family: 'Oswald';
+    gap: 110px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 70px;
+            position: relative;
 
 
 
+}
+.redBox input{
+    outline: none;
+    list-style-type: none;
+    border: none;
+    border-radius: 30px;
+    height: 39px;
+    width: 300px;
+    padding: 10px 20px;
+    font-size: 18px;
+    margin-right: 50px;
 
 
+}
+.redBox a{
+    padding: 10px 20px;
+    border-radius: 30px;
+    background: #121212;
+    color: white;
+    font-size: 13px;
+
+}
+.inputBox{
+    display: flex;
+    
+
+}
+.inputBox a{
+    position: absolute;
+    right: 30px;
+    
+    z-index: 30;
+
+}
+.footerGrid{
+    display: grid;
+    grid-template-columns: 1fr 200px 200px 1fr;
+    justify-self: center;
+    align-self: center;
+    column-gap: 40px;
+    margin-top:-20px;
+    
+    
+}
+.footerGrid > div{
+justify-self: center;
+align-self: center;
+}
+.footerGrid .texts p{
+padding-top: 20px;
+padding-bottom: 40px;
+color: #666;;
+
+    
+}
+.footerGrid .links h5{
+color: #FF4655;
+font-size: 23px;
+margin-bottom: 20px;
+margin-top: 20px;
+    
+}
+.footerGrid .links h6{
+padding: 10px 0px;
 
 
+color: rgb(158, 154, 154);
+
+    
+}
+.footerGrid .teams h5{
+color: #FF4655;
+font-size: 23px;
+margin-bottom: 20px;
+margin-top: 16px;
+    
+}
+.footerGrid .teams h6{
+padding: 10px 0px;
 
 
+color: rgb(158, 154, 154);
 
+    
+}
+.footerGrid .gallery h5{
+    color: #FF4655;
+margin-top: 50px;    
+padding-bottom: 30px;
+    
 
+}
+.footerGrid .icons{
+    display: flex;
+    gap: 24px;
+}
+.horizontalLine{
+    position: absolute;
+    width: 98%;
+    height: 1px;
+    background: #383636;
+    bottom: 15%;
 
+}
 
-/* community part start */
-/* community part end */
-/* community part start */
-/* community part end */
-/* community part start */
-/* community part end */
-/* community part start */
-/* community part end */
+.copyrightText{
+    text-align: center;
+    margin-top: 100px;
+    
+}
+.copyrightText span{
+    color: #FF4655;
+}
+
+/* footer section 9 part end */ 
