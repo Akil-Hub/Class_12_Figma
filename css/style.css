@@ -12,6 +12,10 @@
     padding: 0;
     line-height: 0.8;
 } */
+html::-webkit-scrollbar,
+body::-webkit-scrollbar{
+   display: none;
+}
 
 ul,
 li {
@@ -26,6 +30,7 @@ a:hover {
 body {
     background: #000;
     color: white;
+    overflow-x: hidden;
 }
 
 .nav-link {
@@ -597,6 +602,7 @@ font-size: 25px;
 .boxes{
     padding: 100px 0px;
 }
+
 .box img{
     width: 100%;
     height: auto;
@@ -833,6 +839,7 @@ font-size:20px ;
     align-self: center;
     column-gap: 40px;
     margin-top:-20px;
+    position: relative;
     
     
 }
@@ -903,11 +910,10 @@ padding-bottom: 30px;
 }
 
 .copyrightText{
-    text-align: center;
+     text-align: center;
     display: inline-block;
     font-size: 14px;
     margin-top: 100px;
-    
 }
 .copyrightText span{
     color: #FF4655;

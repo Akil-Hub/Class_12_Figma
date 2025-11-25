@@ -4,7 +4,7 @@ const navItems = document.querySelectorAll(".nav-item");
 
 gsap.from(navItems, {
   y: -20,
-  opacity: 0,
+  opacity:0,
   duration: 0.6,
   stagger: 0.15 // each item animates after previous
 });
