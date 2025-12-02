@@ -102,7 +102,7 @@ videos.forEach((video, i) => {
 const logos = document.querySelectorAll(".running-logos");
 
 // Desktop animation
-if (window.innerWidth > 776) {
+if (window.innerWidth > 576) {
   gsap.to(logos, {
     xPercent: -50,
     duration: 7,

@@ -53,30 +53,32 @@
 
     #bannerPart .text p {
         padding-top: 15px;
+        width: 476px;
     }
 
     /* banner part end */
     /* community section 2 part start  */
     #communityPart h2 {
-        width: 98%;
+        width: 366px;
         font-size: 33px;
-
-        padding-left: 10px;
+        padding-left: 8px;
+        font-size: 30px;
     }
 
     #communityPart h2::after {
-
-
         width: 100px;
-
-        left: 173px;
-
+        left: 154px;
     }
 
     .text1 {
         margin-left: 10px;
-        /* width: 98%; */
         padding-right: 29px;
+    }
+
+    .text1 h6 {
+
+        font-size: 15px;
+
     }
 
     #special-text {
@@ -101,8 +103,7 @@
     }
 
     #btn1 {
-
-        margin: 25px 155px;
+        margin: 23px 106px;
     }
 
     #row2 {
@@ -151,7 +152,7 @@
 
     /* Heading adjustments for small screens */
     .blackImg h2 {
-        font-size: 38px;
+        font-size: 34px;
         text-align: left;
         letter-spacing: 1.5px;
         padding-bottom: 30px;
@@ -161,9 +162,9 @@
 
     .blackImg h2::after {
         width: 70px;
-
-        top: 66%;
-        left: 28%;
+        /* top: 30px; */
+        left: 175px;
+        bottom: 36px;
     }
 
     /* Images become full width */
@@ -189,12 +190,10 @@
 
 
     /* section 4 start*/
-    .videoPart h2 {
-        font-size: 31px;
-
-        padding-left: 38px;
-    }
-
+  .videoPart h2 {
+    font-size: 29px;
+    padding-left: 24px;
+}
     .videoPart h2::after {
 
         width: 99px;
@@ -282,25 +281,23 @@
         margin-left: 0px;
         width: 100%;
     }
+.gamesCatalog .text a {
+    margin: 9px 70px;
 
-    .gamesCatalog .text a {
-
-
-        margin: 0 90px;
-    }
+}
 
     /* section 5 end */
     /* section 6 start  */
-    .gameAccessories h2 {
-        font-size: 31px;
-        width: 100%;
-        padding-left: 39px;
-    }
+ .gameAccessories h2 {
+    font-size: 26px;
+    width: 100%;
+    padding-left: 23px;
+}
 
-    .gameAccessories h2::after {
-
-        bottom: 7px;
-    }
+.gameAccessories h2::after {
+    bottom: 5px;
+    left: 218px;
+}
 
     .product {
         background: #191919;
@@ -325,7 +322,7 @@
     }
 
     .boxes h2::after {
-        right: 112px;
+        right: 200px;
         bottom: 5px;
     }
 
@@ -350,21 +347,19 @@
         padding-left: 0px;
     }
 
-    .commonQuestions h2 {
-        font-size: 25px;
-
-        letter-spacing: 3px;
-        width: 100%;
-        padding-left: 20px;
-
-    }
+.commonQuestions h2 {
+    font-size: 21px;
+    letter-spacing: 3px;
+    width: 107%;
+    padding-left: 4px;
+}
 
     .commonQuestions h2::after {
 
         width: 90px;
 
-        right: 65px;
-        bottom: 2px;
+        right: 77px;
+        bottom: 5px;
     }
 
     /* section 6 end */
@@ -430,6 +425,10 @@
 
         bottom: 6%;
     }
+    .inputBox {
+
+    margin-left: 30px;
+}
 
     /* footer part end */
 }
