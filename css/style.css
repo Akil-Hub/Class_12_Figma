@@ -53,7 +53,6 @@ color: white;
 
 /* Banner part start */
 .navbar {
-    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -110,7 +109,6 @@ color: white;
     text-align: left;
     width: 500px;
 color: rgb(192, 189, 189);
-
 }
 
 .btn {
