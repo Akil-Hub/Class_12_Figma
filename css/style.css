@@ -832,7 +832,7 @@ font-size:20px ;
 }
 .footerGrid{
     display: grid;
-    grid-template-columns: 1fr 200px 200px 1fr;
+    grid-template-columns: 1fr 420px  1fr;
     justify-self: center;
     align-self: center;
     column-gap: 40px;
@@ -845,6 +845,10 @@ font-size:20px ;
 justify-self: center;
 align-self: center;
 }
+.middleRow{
+    display: flex;
+    gap: 100px;
+}
 .footerGrid .texts p{
 padding-top: 20px;
 padding-bottom: 40px;
@@ -856,7 +860,7 @@ color: #666;;
 color: #FF4655;
 font-size: 23px;
 margin-bottom: 20px;
-margin-top: 20px;
+margin-top: 16px;
     
 }
 .footerGrid .links h6{
@@ -871,7 +875,7 @@ color: rgb(158, 154, 154);
 color: #FF4655;
 font-size: 23px;
 margin-bottom: 20px;
-margin-top: 16px;
+margin-top: 17px;
     
 }
 .footerGrid .teams h6{
