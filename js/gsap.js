@@ -1,89 +1,75 @@
-//navbar animation
+// navbar animation
 const navItems = document.querySelectorAll(".nav-item");
 
 gsap.from(navItems, {
   y: -20,
   opacity: 0,
   duration: 0.6,
-  stagger: 0.15, // each item animates after previous
+  stagger: 0.15,
 });
 
-// Register ScrollTrigger plugin
+// Register ScrollTrigger
 gsap.registerPlugin(ScrollTrigger);
 
-// Animation left to right
-const textElements = document.querySelectorAll(".leftAnimation");
-
-// Loop through each element
-textElements.forEach((elem) => {
+// LEFT ANIMATION
+document.querySelectorAll(".leftAnimation").forEach((elem) => {
   gsap.from(elem, {
     scrollTrigger: {
-      trigger: elem, // element that triggers animation
-      start: "top 80%", // when animation starts
-      toggleActions: "restart none restart none", // run on scroll in/out
+      trigger: elem,
+      start: "top 80%",
+      toggleActions: "restart none restart none",
     },
-    x: -150, // start 150px left
-    opacity: 0, // start invisible
-    duration: 1.2, // animation duration
-  });
-});
-
-// Animation right to left
-const rightItems = document.querySelectorAll(".rightAnimation");
-
-// Loop through each element
-rightItems.forEach((elem) => {
-  gsap.from(elem, {
-    scrollTrigger: {
-      trigger: elem, // element that triggers animation
-      start: "top 80%", // when animation starts
-      toggleActions: "restart none restart none", // run on scroll in/out
-    },
-    x: 150, // start 150px left
-    opacity: 0, // start invisible
-    duration: 1.2, // animation duration
-  });
-});
-
-// Animation bottom to top
-const bottomItems = document.querySelectorAll(".bottomAnimation");
-
-// Loop through each element
-bottomItems.forEach((elem) => {
-  gsap.from(elem, {
-    scrollTrigger: {
-      trigger: elem, // element that triggers animation
-      start: "top 80%", // when animation starts
-      toggleActions: "restart none restart none", // run on scroll in/out
-    },
-    y: 150, // start 150px left
-    opacity: 0, // start invisible
+    x: -150,
+    opacity: 0,
     duration: 1.2,
   });
 });
 
-// Animation bottom to top only for cards items
-const cardsItem = document.querySelectorAll(".bottomCardAnimation");
-
-// Loop through each element
-cardsItem.forEach((elem, i) => {
+// RIGHT ANIMATION
+document.querySelectorAll(".rightAnimation").forEach((elem) => {
   gsap.from(elem, {
     scrollTrigger: {
-      trigger: elem, // element that triggers animation
-      start: "top 80%", // when animation starts
-      toggleActions: "restart none restart none", // run on scroll in/out
+      trigger: elem,
+      start: "top 80%",
+      toggleActions: "restart none restart none",
     },
-    y: 150, // start 150px left
-    opacity: 0, // start invisible
+    x: 150,
+    opacity: 0,
     duration: 1.2,
-    delay: i * 0.2, // Stagger Effect                  // animation duration
   });
 });
 
-// Cards animation
-const videos = document.querySelectorAll(".zoomOutAnimation");
+// BOTTOM ANIMATION
+document.querySelectorAll(".bottomAnimation").forEach((elem) => {
+  gsap.from(elem, {
+    scrollTrigger: {
+      trigger: elem,
+      start: "top 80%",
+      toggleActions: "restart none restart none",
+    },
+    y: 150,
+    opacity: 0,
+    duration: 1.2,
+  });
+});
 
-videos.forEach((video, i) => {
+// BOTTOM CARD ANIMATION
+document.querySelectorAll(".bottomCardAnimation").forEach((elem, i) => {
+  gsap.from(elem, {
+    scrollTrigger: {
+      trigger: elem,
+      start: "top 80%",
+      toggleActions: "restart none restart none",
+    },
+    y: 150,
+    opacity: 0,
+    duration: 1.2,
+    delay: i * 0.2,
+  });
+});
+
+// ZOOM OUT ANIMATION
+document.querySelectorAll(".zoomOutAnimation").forEach((video, i) => {
   gsap.from(video, {
     scrollTrigger: {
       trigger: video,
@@ -97,58 +83,41 @@ videos.forEach((video, i) => {
   });
 });
 
-// Running Companies logo animation
-// Select all logo elements
-const logos = document.querySelectorAll(".running-logos");
+// RUNNING LOGOS — Desktop ONLY
+// const logos = document.querySelectorAll(".running-logos");
 
-// Desktop animation
-if (window.innerWidth > 576) {
-  gsap.to(logos, {
-    xPercent: -50,
-    duration: 7,
-    repeat: -1,
-    ease: "linear"
-  });
+// if (window.innerWidth > 566) {
+//   gsap.to(logos, {
+//     xPercent: -50,
+//     duration: 7,
+//     repeat: -1,
+//     ease: "linear",
+//   });
+// } else {
+//   // MOBILE — Stop animation completely
+//   gsap.killTweensOf(logos);
+//   ScrollTrigger.getAll().forEach((st) => st.kill());
+// }
 
-// Mobile animation (zoomOut with index-based stagger)
-} else {
-  gsap.from(logos, {
-    scrollTrigger: {
-      trigger: logos,
-      start: "top 85%",
-      toggleActions: "restart none restart none"
-    },
-    scale: 0,
-    opacity: 0,
-    duration: 0.9,
-    stagger: (i) => i * 0.2 // index-based stagger
-  });
-}
-
-
-//Card Row Animation
-const cardRows = document.querySelectorAll(".parentCardAnim");
-
-cardRows.forEach((row) => {
+// CARD ROW ANIMATION
+document.querySelectorAll(".parentCardAnim").forEach((row) => {
   const cards = row.querySelectorAll(".childCardAnim");
 
   gsap.from(cards, {
     scrollTrigger: {
-      trigger: row, // animate when the whole row is in view
+      trigger: row,
       start: "top 85%",
       toggleActions: "restart none restart none",
     },
     scale: 0,
     opacity: 0,
     duration: 0.8,
-    stagger: 0.2, // each card appears one after another
+    stagger: 0.2,
   });
 });
 
-//Footer Column Animation
-const footerCols = document.querySelectorAll(".footerColAnimation");
-
-footerCols.forEach((col, i) => {
+// FOOTER COLUMN ANIMATION
+document.querySelectorAll(".footerColAnimation").forEach((col, i) => {
   gsap.from(col, {
     scrollTrigger: {
       trigger: col,
@@ -158,19 +127,25 @@ footerCols.forEach((col, i) => {
     y: 50,
     opacity: 0,
     duration: 1,
-    delay: i * 0.2, // staggered
+    delay: i * 0.2,
   });
 });
 
+// COPYRIGHT — Desktop ONLY
 const copyright = document.querySelector(".copyrightText");
 
-gsap.from(copyright, {
-  scrollTrigger: {
-    trigger: copyright,
-    start: "top 95%", // start a bit lower
-    toggleActions: "restart none restart none",
-  },
-  scale: 0,
-  opacity: 0,
-  duration: 0.7,
-});
+if (window.innerWidth > 566) {
+  gsap.from(copyright, {
+    scrollTrigger: {
+      trigger: copyright,
+      start: "top 95%",
+      toggleActions: "restart none restart none",
+    },
+    scale: 0,
+    opacity: 0,
+    duration: 0.7,
+  });
+} else {
+  // MOBILE — do NOT remove the element, only stop animation
+  gsap.killTweensOf(copyright);
+}

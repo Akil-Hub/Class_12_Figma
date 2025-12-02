@@ -2,6 +2,9 @@
 
 /* Navbar part start */
 @media (max-width: 575.98px) {
+    .body{
+        overflow-x: hidden;
+    }
     .navbar-toggler i {
         color: white;
     }
@@ -160,13 +163,12 @@
         padding-left: 15px;
     }
 
-    .blackImg h2::after {
-        width: 70px;
-        /* top: 30px; */
-        left: 175px;
-        bottom: 36px;
-    }
-
+.blackImg h2::after {
+    width: 100px;
+    /* top: 30px; */
+    left: 117px;
+    bottom: 36px;
+}
     /* Images become full width */
     .redImg img,
     .blackImg img {
