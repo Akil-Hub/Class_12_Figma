@@ -61,7 +61,7 @@ $(document).ready(function () {
     infinite: true,
     autoplaySpeed: 4000,
     arrows: true,
-    dots: false,
+    dots: true,
     rtl: false,
     prevArrow: '<i class="fa-solid fa-circle-arrow-left slick-prev"></i>',
     nextArrow: '<i class="fa-solid fa-circle-arrow-right slick-next"></i>',

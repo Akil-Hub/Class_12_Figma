@@ -322,6 +322,7 @@
     .product img {
         text-align: center; /* Reduce margin on mobile */
         margin: 0 auto;
+        width: 80%;
     }
 
 /* section 6 end */

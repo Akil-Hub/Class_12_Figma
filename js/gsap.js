@@ -132,20 +132,20 @@ document.querySelectorAll(".footerColAnimation").forEach((col, i) => {
 });
 
 // COPYRIGHT — Desktop ONLY
-const copyright = document.querySelector(".copyrightText");
+// const copyright = document.querySelector(".copyrightText");
 
-if (window.innerWidth > 566) {
-  gsap.from(copyright, {
-    scrollTrigger: {
-      trigger: copyright,
-      start: "top 95%",
-      toggleActions: "restart none restart none",
-    },
-    scale: 0,
-    opacity: 0,
-    duration: 0.7,
-  });
-} else {
-  // MOBILE — do NOT remove the element, only stop animation
-  gsap.killTweensOf(copyright);
-}
+// if (window.innerWidth > 566) {
+//   gsap.from(copyright, {
+//     scrollTrigger: {
+//       trigger: copyright,
+//       start: "top 95%",
+//       toggleActions: "restart none restart none",
+//     },
+//     scale: 0,
+//     opacity: 0,
+//     duration: 0.7,
+//   });
+// } else {
+//   // MOBILE — do NOT remove the element, only stop animation
+//   gsap.killTweensOf(copyright);
+// }
