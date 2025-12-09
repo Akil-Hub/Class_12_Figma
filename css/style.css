@@ -203,7 +203,7 @@ color: rgb(192, 189, 189);
 }
 
 
-#row2 {
+#row2  {
     display: flex;
     gap: 20px;
     justify-content: center;
@@ -214,15 +214,17 @@ color: rgb(192, 189, 189);
 
 }
 
-#row2 div {
+ .changeColor {
     background: #212121;
 
     border-top-right-radius: 50px;
     border-bottom-left-radius: 50px;
+    transition: all .9s ease;
 
-
-
-
+}
+.changeColor1{
+    background: #FF4655;
+    color: black;
 }
 
 #row2 h5 {
@@ -559,7 +561,7 @@ font-size: 16px;
     background: #191919;
     text-align: center;
     width: 23%;
-    margin: 0 auto;
+    margin: 0 10px;
 }
 .product p {
     padding: 20px 0px;
@@ -932,3 +934,71 @@ padding-bottom: 30px;
 }
 
 /* footer section 9 part end */ 
+
+.back-to-top{
+    position:fixed;
+    font-size: 30px;
+    color: #FF4655;
+    right: 20px;
+    bottom:20px
+}
+.slick-prev, .slick-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  border: none;
+  color: #FF4655;
+  font-size: 35px;
+
+  cursor: pointer;
+  
+
+}
+.slick-prev:active,.slick-next:active{
+
+transform:translateY(-50%) scale(.8);
+}
+
+.slick-prev {
+  left: -25px;
+}
+
+.slick-next {
+  right: -11px;
+}
+
+
+.slick-dots{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.slick-dots li button{
+    
+    display: none;
+
+}
+.slick-dots li {
+border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    background: gray;
+   
+
+}
+.slick-dots li.slick-active{
+ background-color: #FF4655;
+ transform: scale(1.2);
+
+}
+.slick-dots{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+

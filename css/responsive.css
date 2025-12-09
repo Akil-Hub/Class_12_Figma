@@ -295,6 +295,13 @@
     width: 100%;
     padding-left: 23px;
 }
+.slick-prev {
+  left: 5px;
+}
+
+.slick-next {
+  right: 10px;
+}
 
 .gameAccessories h2::after {
     bottom: 5px;
@@ -310,9 +317,9 @@
         border-radius: 10px;
     }
 
-    .slider img {
+    /* .slider img {
         display: none;
-    }
+    } */
 
     .boxes h2 {
         font-size: 29px;
@@ -434,6 +441,7 @@
 
     /* footer part end */
 }
+
 
 
 /* //for medium devices */

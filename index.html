@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="./css/all.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/responsive.css" />
+    <link rel="stylesheet" href="css/slick.css" />
     <!-- css file end -->
     <title>Gaming Website</title>
   </head>
@@ -165,33 +166,33 @@
 
         <div class="container">
           <div id="row2" class="running-logos">
-            <div class="py-2">
+            <div class="py-2 changeColor">
               <h5>
-                112k
+                <span class="counter">100</span>k
                 <img src="./images/Ellipse 3 (2).png" alt="" />
               </h5>
 
               <p>Community Earning</p>
             </div>
-            <div class="py-2">
+            <div class="py-2 changeColor">
               <h5>
-                12M
+                <span class="counter">12</span>M
                 <img src="./images/Ellipse 3 (2).png" alt="" />
               </h5>
 
               <p>Total Member</p>
             </div>
-            <div class="py-2" id="">
+            <div class="py-2 changeColor">
               <h5 id="">
-                100k
+                <span class="counter">100</span>k
                 <img src="./images/Ellipse 3 (2).png" alt="" />
               </h5>
 
               <p>Streams Complete</p>
             </div>
-            <div class="py-2">
+            <div class="py-2 changeColor">
               <h5>
-                844
+                <span class="counter">9844</span>
                 <img src="./images/Ellipse 3 (2).png" alt="" />
               </h5>
 
@@ -365,34 +366,43 @@
     <section id="section6">
       <div class="gameAccessories container">
         <h2>WE PROVIDE ALL GAMING ACCESSORIES</h2>
-        <div class="row products parentCardAnim">
-          <div class="col-lg-3   product childCardAnim">
+        <div class="row products parentCardAnim multiple-items">
+          <div class="col-lg-3 product childCardAnim">
             <h4>$95</h4>
             <img src="./images/gaming-product5 1.png" alt="" />
             <h5>Gaming Controller</h5>
             <p>ADD TO CART</p>
           </div>
-          <div class="col-lg-3  product childCardAnim">
+          <div class="col-lg-3 product childCardAnim">
             <h4>$95</h4>
             <img src="./images/gaming-product4 1.png" alt="" />
             <h5>Gaming Controller</h5>
             <p>ADD TO CART</p>
           </div>
-          <div class="col-lg-3  product childCardAnim">
+          <div class="col-lg-3 product childCardAnim">
             <h4>$95</h4>
             <img src="./images/gaming-product2 1.png" alt="" />
             <h5>Gaming Controller</h5>
             <p>ADD TO CART</p>
           </div>
-          <div class="col-lg-3  product childCardAnim">
+          <div class="col-lg-3 product childCardAnim">
             <h4>$95</h4>
             <img src="./images/gaming-product5 1.png" alt="" />
             <h5>Gaming Controller</h5>
             <p>ADD TO CART</p>
           </div>
-        </div>
-        <div class="slider">
-          <img src="./images/slide-icon (1).png" alt="" />
+          <div class="col-lg-3 product childCardAnim">
+            <h4>$95</h4>
+            <img src="./images/gaming-product2 1.png" alt="" />
+            <h5>Gaming Controller</h5>
+            <p>ADD TO CART</p>
+          </div>
+          <div class="col-lg-3 product childCardAnim">
+            <h4>$95</h4>
+            <img src="./images/gaming-product5 1.png" alt="" />
+            <h5>Gaming Controller</h5>
+            <p>ADD TO CART</p>
+          </div>
         </div>
       </div>
     </section>
@@ -533,23 +543,23 @@
             </div>
           </div>
 
-      <div class="middleRow">
+          <div class="middleRow">
             <div class="links footerColAnimation">
-            <h5>LINKS</h5>
-            <h6>Home</h6>
-            <h6>About</h6>
-            <h6>Tournament</h6>
-            <h6>Contact</h6>
-          </div>
+              <h5>LINKS</h5>
+              <h6>Home</h6>
+              <h6>About</h6>
+              <h6>Tournament</h6>
+              <h6>Contact</h6>
+            </div>
 
-          <div class="teams footerColAnimation">
-            <h5>TEAMS</h5>
-            <h6>PALADINS</h6>
-            <h6>CS:GD</h6>
-            <h6>DOTA 2</h6>
-            <h6>VALORANT</h6>
+            <div class="teams footerColAnimation">
+              <h5>TEAMS</h5>
+              <h6>PALADINS</h6>
+              <h6>CS:GD</h6>
+              <h6>DOTA 2</h6>
+              <h6>VALORANT</h6>
+            </div>
           </div>
-      </div>
           <div class="gallery footerColAnimation">
             <h5>GALLERY</h5>
             <img src="./images/footer-img.png" alt="" />
@@ -564,17 +574,26 @@
           </p>
         </div>
       </div>
+      <i class="fa-solid fa-jet-fighter-up back-to-top"></i>
     </section>
 
     <!-- section 9 footer end -->
 
     <script src="./js/bootstrap.bundle.min.js"></script>
+
     <!-- GSAP main library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
-    <script src="./js/script.js"></script>
+    <script src="/js/jquery-3.7.1.min.js"></script>
 
+    <!-- Load Waypoints -->
+    <script src="/js/jquery.waypoints.min.js"></script>
+    <!-- Load CounterUp  -->
+    <script src="/js/counterup.min.js"></script>
+    <script src="/js/slick.min.js"></script>
+
+    <script src="/js/script.js"></script>
     <script src="./js/gsap.js"></script>
   </body>
 </html>
