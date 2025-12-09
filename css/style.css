@@ -560,9 +560,18 @@ font-size: 16px;
 .product {
     background: #191919;
     text-align: center;
-    width: 23%;
+    /* Remove width: 23% */
     margin: 0 10px;
+    /* Add box-sizing to ensure proper sizing */
+    box-sizing: border-box;
 }
+    .product img {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+
+
 .product p {
     padding: 20px 0px;
     color: #FF4655;

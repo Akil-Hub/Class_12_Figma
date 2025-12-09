@@ -289,37 +289,51 @@
 }
 
     /* section 5 end */
+
     /* section 6 start  */
  .gameAccessories h2 {
     font-size: 26px;
     width: 100%;
     padding-left: 23px;
 }
-.slick-prev {
-  left: 5px;
-}
 
-.slick-next {
-  right: 10px;
-}
+
 
 .gameAccessories h2::after {
     bottom: 5px;
     left: 218px;
 }
 
-    .product {
-        background: #191919;
-        text-align: center;
-        width: 80%;
-        margin: 10px auto;
 
-        border-radius: 10px;
+
+.slick-prev {
+    left: 5px;
+    z-index: 1; 
+}
+
+.slick-next {
+    right: 10px;
+    z-index: 1; 
+}
+
+    .product {
+        margin: 0 20px; /* Reduce margin on mobile */
+    }
+    .product img {
+        text-align: center; /* Reduce margin on mobile */
+        margin: 0 auto;
     }
 
-    /* .slider img {
-        display: none;
-    } */
+/* section 6 end */
+
+
+
+
+
+
+
+
+
 
     .boxes h2 {
         font-size: 29px;

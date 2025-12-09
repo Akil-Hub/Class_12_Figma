@@ -54,26 +54,25 @@ $(document).ready(function () {
     });
   }, 100);
 
-  $(".multiple-items").slick({
+  $(".parent").slick({
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
     infinite: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 4000,
     arrows: true,
-    dots: true,
-
+    dots: false,
     rtl: false,
     prevArrow: '<i class="fa-solid fa-circle-arrow-left slick-prev"></i>',
     nextArrow: '<i class="fa-solid fa-circle-arrow-right slick-next"></i>',
-    responsive: [
+      responsive: [
       {
         breakpoint: 1024,
         settings: {
           slidesToShow: 4,
           slidesToScroll: 2,
           infinite: true,
-        },
+        }
       },
       {
         breakpoint: 768,
@@ -81,7 +80,7 @@ $(document).ready(function () {
           slidesToShow: 2,
           slidesToScroll: 1,
           infinite: true,
-        },
+        }
       },
       {
         breakpoint: 480,
@@ -89,11 +88,21 @@ $(document).ready(function () {
           slidesToShow: 1,
           slidesToScroll: 1,
           infinite: true,
-        },
-      },
+        }
+      }
     ],
+
   });
-});
+
+
+
+
+
+
+
+
+
+}); // jquery function ends here
 
 
 
@@ -113,7 +122,7 @@ $('.back-to-top').on('click',function(event){
 
   $('html,body').animate({
     scrollTop:0,
-  });
+  },2000);
 })
 
 //Jquerry button animation
